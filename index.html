@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 15%;
+        background-color: gray;
+      }
+      .btnstyle {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        background-color: red;
+        border: none;
+        width: 50px;
+        height: 50px;
+        border: outset 1px;
+      }
+      .btnstyle:active {
+        border: inset 2px;
+      }
+      #numcontainer {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 70px 70px 70px 70px;
+        grid-template-rows: 70px 70px 70px;
+        row-gap: 10px;
+        column-gap: 10px;
+      }
+      .symbolstyle {
+        background-color: #5c0303;
+        color: white;
+      }
+      input {
+        width: 270px;
+        height: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 900;
+        font-size: medium;
+      }
+      .disstyle {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" disabled />
+    <div id="numcontainer">
+      <button class="btnstyle" value="1">1</button>
+      <button class="btnstyle" value="2">2</button>
+      <button class="btnstyle" value="3">3</button>
+      <button class="btnstyle symbolstyle" value="+">+</button>
+      <button class="btnstyle" value="4">4</button>
+      <button class="btnstyle" value="5">5</button>
+      <button class="btnstyle" value="6">6</button>
+      <button class="btnstyle symbolstyle" value="-">-</button>
+      <button class="btnstyle" value="7">7</button>
+      <button class="btnstyle" value="8">8</button>
+      <button class="btnstyle" value="9">9</button>
+      <button class="btnstyle symbolstyle" value="*">*</button>
+      <button class="btnstyle" value="0">0</button>
+      <button class="btnstyle symbolstyle" value="/">/</button>
+      <button class="btnstyle symbolstyle" value="remove"><-</button>
+      <button class="btnstyle symbolstyle" value="count">Enter</button>
+    </div>
+    <!-- <footer>wyszarszone przyciski jeszcze nie działają</footer> -->
+    <script src="btnscript.js"></script>
+  </body>
+</html>
